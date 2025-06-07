@@ -1,8 +1,14 @@
 {
   "name": "postcss-day",
-  "version": "0.0.0",
-  "description": "PostCSS plugin to acknowledge that anouther CSSday just went by",
-  "keywords": ["postcss", "css", "postcss-plugin", "postcss-day"],
+  "type": "module",
+  "version": "1.0.0",
+  "description": "PostCSS plugin to acknowledge that another CSS Day went by, and to give you a bitterbal.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-day"
+  ],
   "scripts": {
     "unit": "node --test index.test.js",
     "test": "npm run unit && eslint ."
@@ -11,7 +17,7 @@
   "license": "MIT",
   "repository": "mrtnvh/postcss-day",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
   "peerDependencies": {
     "postcss": "^8.4.27"
@@ -22,12 +28,18 @@
   },
   "eslintConfig": {
     "parserOptions": {
-      "ecmaVersion": 2017
+      "ecmaVersion": 2017,
+      "sourceType": "module"
     },
     "env": {
       "node": true,
       "es6": true
     },
-    "extends": ["eslint:recommended"]
+    "extends": [
+      "eslint:recommended"
+    ]
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0"
   }
 }
