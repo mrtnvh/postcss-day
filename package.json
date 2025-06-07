@@ -15,7 +15,10 @@
   },
   "author": "Maarten Van Hoof <postcss-day@mrtnvh.com>",
   "license": "MIT",
-  "repository": "mrtnvh/postcss-day",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtnvh/postcss-day.git"
+  },
   "engines": {
     "node": ">=22.0.0"
   },
